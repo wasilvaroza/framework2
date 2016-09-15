@@ -1,0 +1,57 @@
+<%= form_for(@atividade) do |f| %>
+  <% if @atividade.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@atividade.errors.count, "error") %> prohibited this atividade from being saved:</h2>
+
+      <ul>
+      <% @atividade.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id_atividade %><br>
+    <%= f.number_field :id_atividade %>
+  </div>
+  <div class="field">
+    <%= f.label :id_evento %><br>
+    <%= f.number_field :id_evento %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo %><br>
+    <%= f.text_field :tipo %>
+  </div>
+  <div class="field">
+    <%= f.label :titulo %><br>
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :assunto %><br>
+    <%= f.text_field :assunto %>
+  </div>
+  <div class="field">
+    <%= f.label :resumo %><br>
+    <%= f.text_field :resumo %>
+  </div>
+  <div class="field">
+    <%= f.label :local %><br>
+    <%= f.text_field :local %>
+  </div>
+  <div class="field">
+    <%= f.label :datahora_inicio %><br>
+    <%= f.date_select :datahora_inicio %>
+  </div>
+  <div class="field">
+    <%= f.label :datahora_fim %><br>
+    <%= f.date_select :datahora_fim %>
+  </div>
+  <div class="field">
+    <%= f.label :id_participante %><br>
+    <%= f.number_field :id_participante %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

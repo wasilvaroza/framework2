@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_atividade: 1
+  id_evento: 1
+  tipo: MyString
+  titulo: MyString
+  assunto: MyString
+  resumo: MyString
+  local: MyString
+  datahora_inicio: 2016-09-14
+  datahora_fim: 2016-09-14
+  id_participante: 1
+
+two:
+  id_atividade: 1
+  id_evento: 1
+  tipo: MyString
+  titulo: MyString
+  assunto: MyString
+  resumo: MyString
+  local: MyString
+  datahora_inicio: 2016-09-14
+  datahora_fim: 2016-09-14
+  id_participante: 1

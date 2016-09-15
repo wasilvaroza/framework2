@@ -1,0 +1,2 @@
+json.extract! atividade, :id, :id_atividade, :id_evento, :tipo, :titulo, :assunto, :resumo, :local, :datahora_inicio, :datahora_fim, :id_participante, :created_at, :updated_at
+json.url atividade_url(atividade, format: :json)
